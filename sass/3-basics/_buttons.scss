@@ -1,0 +1,38 @@
+.button {
+
+    display: inline-block;
+    padding: 11px 26px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.763;
+    letter-spacing: -.12px;
+    font-family: 'Public Sans', sans-serif;
+
+
+
+
+    &Primary {
+        background-color: $darkPink;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        color: $colorWhite;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background-color: $charmPink;
+        }
+    }
+
+    &Secondary {
+
+
+    }
+
+}
