@@ -36,3 +36,29 @@
     }
 
 }
+
+
+.smallButton {
+    display: inline-block;
+    border: 1px solid $waterWhite;
+    color: $waterWhite;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 16px 32px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.11px;
+    text-decoration: none;
+    margin-top: 32px;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $waterWhite;
+        color: $mirageBlue;
+    }
+
+}
