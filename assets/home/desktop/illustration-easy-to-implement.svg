@@ -1,1 +1,16 @@
-<svg width="605" height="444" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-24.2%" y="-37.9%" width="159.6%" height="193.3%" filterUnits="objectBoundingBox" id="a"><feOffset dx="25" dy="25" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="40" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.212302148 0 0 0 0 0.325209598 0 0 0 0 0.419299139 0 0 0 0.300726617 0" in="shadowBlurOuter1"/></filter><rect id="b" x="0" y="0" width="445" height="284" rx="8"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(55 55)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#1B262F" xlink:href="#b"/></g><path d="M63 55h429a8 8 0 018 8v32H55V63a8 8 0 018-8z" fill="#2E3F4D"/><g transform="translate(71 67)"><circle fill="#BA4270" cx="8" cy="8" r="8"/><circle fill="#527695" cx="30.4" cy="8" r="8"/><circle fill="#36536B" cx="52.8" cy="8" r="8"/></g><text font-family="RobotoMono-Regular, Roboto Mono" font-size="13" fill="#FBFCFE" transform="translate(55 55)"><tspan x="32" y="86">&lt;form id=&quot;form-id&quot; method=&quot;GET&quot;&gt; &lt;/form&gt;</tspan> <tspan x="32" y="106">&lt;script</tspan> <tspan x="32" y="126"> src=&quot;https://loremipsum.com/api.js&quot;</tspan> <tspan x="32" y="146"> data-client-name=&quot;Your Company&apos;s Name&quot;</tspan> <tspan x="32" y="166"> data-form-id=&quot;form-id&quot;</tspan> <tspan x="32" y="186"> data-key=&quot;test_key&quot;</tspan> <tspan x="32" y="206"> data-product=&quot;transactions&quot;</tspan> <tspan x="32" y="226"> data-env=&quot;sandbox&quot;&gt;</tspan> <tspan x="32" y="246">&lt;/script&gt;</tspan></text></g></svg>
+<svg width="605" height="443" viewBox="0 0 605 443" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M492 55.6284H63C58.5817 55.6284 55 59.1859 55 63.5743V329.763C55 334.152 58.5817 337.709 63 337.709H492C496.418 337.709 500 334.152 500 329.763V63.5743C500 59.1859 496.418 55.6284 492 55.6284Z" fill="#1B262F"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.628387" width="605" height="442.081" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="25" dy="25"/>
+<feGaussianBlur stdDeviation="40"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.212302 0 0 0 0 0.32521 0 0 0 0 0.419299 0 0 0 0.300727 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

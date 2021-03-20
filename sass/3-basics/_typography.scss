@@ -32,8 +32,34 @@ p, ul li a {
         color: $waterWhite;
     }
 
+    &SanJuanBlue{
+        color: $sanJuanBlue;
+    }
+
 }
 
 .paragraph {
-    
+    margin-top: 24px; // TODO check if this should be here!!!
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    mix-blend-mode: normal;
+
+
+    &White {
+        color: $waterWhite;
+    }
+
+    &Transparent {
+        opacity: 0.7;
+    }
+
+    &LightSanJuanBlue{
+        color: $lightSanJuanBlue;
+    } 
+
 }
+    
+

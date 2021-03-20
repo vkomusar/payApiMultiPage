@@ -8,49 +8,25 @@
     justify-content: space-between;
 
     &Text {
-        width:40%;
-        
-        
-        & p {
-            margin-top: 24px;
-            font-family: 'Public Sans';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 15px;
-            line-height: 28px;
-            color: $waterWhite;
-            mix-blend-mode: normal;
-            opacity: 0.7;
+        width:50%;
+        padding-right: 10rem;
+
+        &Reverse {
+            
         }
+
     }
 
     &Image {
         width: 50%;
         display: flex;
-        justify-content: flex-end;
+        padding-left: 5rem;
+        max-width: 580px;
 
-        &Wrapper {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
 
-            & img {
-
-                margin-bottom: 4rem;
-                margin-right: 4rem; 
-
-                &:nth-child(3), &:nth-child(6){
-                    margin-right: 0rem;
-                }
-
-                &:nth-child(1), &:nth-child(4){
-                    margin-left: 4rem;
-                }
-            }
-
+        &Reverse {
+            margin-right: 10%;
         }
 
     }
-
-
 }

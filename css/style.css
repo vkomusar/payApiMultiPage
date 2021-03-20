@@ -114,6 +114,23 @@ p, ul li a {
   letter-spacing: -0.36px; }
   .h1MediumWhite {
     color: #fbfcfe; }
+  .h1MediumSanJuanBlue {
+    color: #36536B; }
+
+.paragraph {
+  margin-top: 24px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  mix-blend-mode: normal; }
+  .paragraphWhite {
+    color: #fbfcfe; }
+  .paragraphTransparent {
+    opacity: 0.7; }
+  .paragraphLightSanJuanBlue {
+    color: #6C8294; }
 
 .uContentWrapper {
   max-width: 1540px;
@@ -203,32 +220,25 @@ p, ul li a {
   align-items: center;
   justify-content: space-between; }
   .contentHalvesText {
-    width: 40%; }
-    .contentHalvesText p {
-      margin-top: 24px;
-      font-family: 'Public Sans';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 28px;
-      color: #fbfcfe;
-      mix-blend-mode: normal;
-      opacity: 0.7; }
+    width: 50%;
+    padding-right: 10rem; }
   .contentHalvesImage {
     width: 50%;
     display: flex;
-    justify-content: flex-end; }
-    .contentHalvesImageWrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .contentHalvesImageWrapper img {
-        margin-bottom: 4rem;
-        margin-right: 4rem; }
-        .contentHalvesImageWrapper img:nth-child(3), .contentHalvesImageWrapper img:nth-child(6) {
-          margin-right: 0rem; }
-        .contentHalvesImageWrapper img:nth-child(1), .contentHalvesImageWrapper img:nth-child(4) {
-          margin-left: 4rem; }
+    padding-left: 5rem;
+    max-width: 580px; }
+    .contentHalvesImageReverse {
+      margin-right: 10%; }
+
+.aboutLogos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .aboutLogos img {
+    margin-bottom: 4rem;
+    margin-right: 4rem; }
+    .aboutLogos img:nth-child(3), .aboutLogos img:nth-child(6) {
+      margin-right: 0rem; }
 
 .homepageHeader {
   width: 100%;
@@ -267,3 +277,9 @@ p, ul li a {
     display: flex;
     flex-direction: row;
     align-items: center; }
+
+.homepageUSPWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }

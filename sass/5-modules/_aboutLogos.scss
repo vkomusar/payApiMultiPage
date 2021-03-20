@@ -1,0 +1,18 @@
+.aboutLogos {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & img {
+
+        margin-bottom: 4rem;
+        margin-right: 4rem; 
+
+        &:nth-child(3), &:nth-child(6){
+            margin-right: 0rem;
+        }
+
+    }
+
+}
