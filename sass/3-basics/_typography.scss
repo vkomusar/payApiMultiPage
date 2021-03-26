@@ -8,8 +8,8 @@ p, ul li a {
 
 .h1Large {
     font-family: 'DM Serif Display', serif;
-    font-size:72px;
-    line-height: 72px;
+    font-size:7.2rem;
+    line-height: 7.2rem;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.55;
@@ -24,8 +24,8 @@ p, ul li a {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
     letter-spacing: -0.36px;
 
     &White {
@@ -39,12 +39,12 @@ p, ul li a {
 }
 
 .paragraph {
-    margin-top: 24px; // TODO check if this should be here!!!
+    margin-top: 2.4rem; // TODO check if this should be here!!!
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
     mix-blend-mode: normal;
 
 

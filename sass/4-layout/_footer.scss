@@ -1,0 +1,73 @@
+.footerNavigation {
+ 
+    width: 100%;
+    background-color: $mirageBlue;
+ 
+     &Wrapper{
+         display: flex;
+         height: 4.8rem;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin: 4rem 0;
+     }
+ 
+     &Content {
+         display: flex;
+         flex-direction: row;
+ 
+         & img {
+             margin-right: 6.4rem; // define spaces
+         }
+ 
+         & ul {
+             display: flex;
+             align-items: center;
+             list-style-type: none;
+         }
+ 
+         & li {
+ 
+             margin-right: 4rem;
+ 
+             & a {
+ 
+                 text-decoration: none;                
+                 color: $waterWhite;
+                 mix-blend-mode: normal;
+                 opacity: 0.7;
+                 font-family: "Public Sans";
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 1.5rem;
+                 line-height: 1.8rem;
+                 transition: all .5s ease-in-out;
+ 
+                 &:hover {
+                     opacity: 1;
+                 }
+ 
+             }
+ 
+         }
+ 
+     }
+
+     &SocialWrapper {
+         
+        & a {
+            margin-right: 2.4rem;
+
+            & svg {
+                fill: $waterWhite;
+                transition: fill .5s ease;
+
+                &:hover {
+                    fill: $charmPink;
+                }
+            }
+        }
+     }
+ 
+ 
+ }

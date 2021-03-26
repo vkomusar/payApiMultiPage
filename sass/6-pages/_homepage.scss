@@ -13,10 +13,13 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            position: relative;
+            padding: 15rem 0;
         }
 
         &Text {
             width: 50%;
+            max-width: 570px; //TODO CHECK THIS
 
             & p {
                 font-family: Public Sans;
@@ -40,6 +43,12 @@
             width:50%;
             display: flex;
             justify-content: flex-end;
+
+            & img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
 
     }
@@ -58,6 +67,10 @@
 
 }
 
+.homepageUSP {
+    background-color: $colorGrey;
+}
+
 .homepageUSPWrapper {
     width: 100%;
     display: flex;
@@ -65,3 +78,14 @@
     align-items: center;
 }
 
+
+.homepageCards {
+    width: 100%;
+    background-color: $colorGrey;
+}
+
+
+.homepageStart {
+    width: 100%;
+    background-color: $colorGrey;
+}
