@@ -117,6 +117,17 @@ p, ul li a {
   .h1MediumSanJuanBlue {
     color: #36536B; }
 
+.h2Large {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.430769px;
+  color: #36536B; }
+  .h2LargeSanJuanBlue {
+    color: #36536B; }
+
 .paragraph {
   margin-top: 2.4rem;
   font-family: 'Public Sans';
@@ -433,3 +444,62 @@ p, ul li a {
 .homepageStart {
   width: 100%;
   background-color: #EDF3F8; }
+
+.pricingHeader {
+  width: 100%;
+  background-color: #EDF3F8; }
+  .pricingHeader:before {
+    position: absolute;
+    content: url("../../assets/shared/desktop/bg-pattern-circle.svg");
+    top: -60vh;
+    right: 0vw;
+    z-index: 1; }
+
+.pricing {
+  padding: 3rem 0; }
+  .pricingWrapper {
+    display: flex;
+    margin-top: 7.2rem;
+    justify-content: space-between; }
+  .pricingCard {
+    width: 33%;
+    max-width: 35rem; }
+    .pricingCard h2 {
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.246154px;
+      color: #BA4270; }
+    .pricingCard p {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 28px;
+      /* or 187% */
+      color: #6C8294; }
+    .pricingCard span {
+      font-family: DM Serif Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 72px;
+      /* identical to box height, or 129% */
+      letter-spacing: -0.430769px;
+      color: #36536B; }
+    .pricingCard ul {
+      list-style-type: none; }
+      .pricingCard ul li {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        /* identical to box height, or 175% */
+        text-indent: 3rem;
+        color: #36536B;
+        opacity: .5; }
+        .pricingCard ul li.active {
+          opacity: 1; }

@@ -35,8 +35,23 @@ p, ul li a {
     &SanJuanBlue{
         color: $sanJuanBlue;
     }
-
 }
+
+.h2Large {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.6rem;
+    line-height: 5.6rem;  
+    letter-spacing: -0.430769px;    
+    color: #36536B; 
+
+    &SanJuanBlue {
+        color: $sanJuanBlue;  
+    }
+}
+
+
 
 .paragraph {
     margin-top: 2.4rem; // TODO check if this should be here!!!
