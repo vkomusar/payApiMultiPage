@@ -49,6 +49,10 @@ p, ul li a {
     &SanJuanBlue {
         color: $sanJuanBlue;  
     }
+
+    &--About {
+        max-width: 70rem;
+    }
 }
 
 

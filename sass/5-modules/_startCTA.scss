@@ -1,13 +1,11 @@
-.homepageStart {
+.start{
 
     &Wrapper {
-
         display: flex;
-        padding-top: 2.5rem;
-        padding-bottom: 9.6rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;        
+
     }
 
     &Text {
@@ -20,8 +18,9 @@
             line-height: 5.6rem;
             letter-spacing: -0.369231px;
             color: $sanJuanBlue; 
-        }
-    }
 
+        }
+
+    }
 
 }

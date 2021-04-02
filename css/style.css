@@ -86,11 +86,19 @@ body {
   text-align: center;
   letter-spacing: -0.11px;
   text-decoration: none;
+  cursor: pointer;
   margin-top: 32px;
   transition: all .5s ease-in-out; }
   .smallButton:hover {
     background-color: #fbfcfe;
     color: #1b262f; }
+  .smallButtonPricing {
+    background-color: transparent;
+    border: 1px solid #36536B;
+    color: #36536B; }
+    .smallButtonPricing:hover {
+      background-color: #36536B;
+      color: #fbfcfe; }
 
 p, ul li a {
   font-family: 'Public Sans'; }
@@ -127,6 +135,8 @@ p, ul li a {
   color: #36536B; }
   .h2LargeSanJuanBlue {
     color: #36536B; }
+  .h2Large--About {
+    max-width: 70rem; }
 
 .paragraph {
   margin-top: 2.4rem;
@@ -155,6 +165,8 @@ p, ul li a {
       padding: 0;
       margin: 0;
       height: auto !important; } }
+  .uContentWrapper--Narrow {
+    width: 64%; }
 
 .uEmail {
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -366,15 +378,13 @@ p, ul li a {
       letter-spacing: -0.115385px;
       color: #6C8294; }
 
-.homepageStartWrapper {
+.startWrapper {
   display: flex;
-  padding-top: 2.5rem;
-  padding-bottom: 9.6rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.homepageStartText h1 {
+.startText h1 {
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: normal;
@@ -382,6 +392,44 @@ p, ul li a {
   line-height: 5.6rem;
   letter-spacing: -0.369231px;
   color: #36536B; }
+
+.aboutInfoList {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 0; }
+  .aboutInfoListItem {
+    display: flex;
+    padding: 2.5rem 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between; }
+    .aboutInfoListItem:last-child {
+      padding-bottom: 0; }
+  .aboutInfoListTitle {
+    max-width: 25.5rem;
+    width: 34%;
+    display: flex;
+    align-items: center; }
+    .aboutInfoListTitle h3 {
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      letter-spacing: -0.246154px;
+      color: #36536B; }
+  .aboutInfoListText {
+    width: 66%; }
+    .aboutInfoListText p {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 28px;
+      /* or 187% */
+      color: #6C8294; }
 
 .homepageHeader {
   width: 100%;
@@ -443,7 +491,9 @@ p, ul li a {
 
 .homepageStart {
   width: 100%;
-  background-color: #EDF3F8; }
+  background-color: #EDF3F8;
+  padding-top: .6rem;
+  padding-bottom: 7.6rem; }
 
 .pricingHeader {
   width: 100%;
@@ -451,7 +501,7 @@ p, ul li a {
   .pricingHeader:before {
     position: absolute;
     content: url("../../assets/shared/desktop/bg-pattern-circle.svg");
-    top: -60vh;
+    top: -38vh;
     right: 0vw;
     z-index: 1; }
 
@@ -461,6 +511,15 @@ p, ul li a {
     display: flex;
     margin-top: 7.2rem;
     justify-content: space-between; }
+  .pricingLine {
+    width: 100%;
+    height: 1px;
+    background-color: #36536B;
+    mix-blend-mode: normal;
+    opacity: .25;
+    margin: 2.4rem 0; }
+    .pricingLineBottom {
+      margin-bottom: 0; }
   .pricingCard {
     width: 33%;
     max-width: 35rem; }
@@ -471,14 +530,15 @@ p, ul li a {
       font-size: 32px;
       line-height: 40px;
       letter-spacing: -0.246154px;
-      color: #BA4270; }
+      color: #BA4270;
+      margin-bottom: 3rem; }
     .pricingCard p {
       font-family: 'Public Sans';
       font-style: normal;
       font-weight: normal;
       font-size: 15px;
       line-height: 28px;
-      /* or 187% */
+      margin-bottom: 2rem;
       color: #6C8294; }
     .pricingCard span {
       font-family: DM Serif Display;
@@ -500,6 +560,39 @@ p, ul li a {
         /* identical to box height, or 175% */
         text-indent: 3rem;
         color: #36536B;
-        opacity: .5; }
-        .pricingCard ul li.active {
-          opacity: 1; }
+        opacity: .5;
+        margin-bottom: .8rem; }
+        .pricingCard ul li:last-child {
+          margin-bottom: 0; }
+        .pricingCard ul li.included {
+          opacity: 1;
+          position: relative; }
+          .pricingCard ul li.included::before {
+            content: url("../../assets/shared/desktop/icon-check.svg");
+            position: absolute;
+            left: -3rem; }
+  .pricingStart {
+    width: 100%;
+    background-color: #EDF3F8;
+    padding-top: 4.6rem;
+    padding-bottom: 7.6rem; }
+
+.about {
+  margin-top: 6rem;
+  position: relative; }
+  .aboutImage {
+    position: relative;
+    padding: 10rem 0;
+    z-index: 10; }
+    .aboutImage img {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      z-index: 20; }
+    .aboutImage::after {
+      content: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: -1; }

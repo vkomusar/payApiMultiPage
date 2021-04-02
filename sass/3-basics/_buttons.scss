@@ -53,12 +53,26 @@
     text-align: center;
     letter-spacing: -0.11px;
     text-decoration: none;
+    cursor: pointer;
     margin-top: 32px;
     transition: all .5s ease-in-out;
 
     &:hover {
         background-color: $waterWhite;
         color: $mirageBlue;
+    }
+
+    &Pricing {
+        background-color: transparent;
+        border: 1px solid $sanJuanBlue;
+        color: $sanJuanBlue;
+
+        &:hover {
+            background-color: $sanJuanBlue;
+            color: $waterWhite;
+        };
+
+
     }
 
 }
