@@ -1,16 +1,20 @@
 .pricingHeader {
     width: 100%;
     background-color: $colorGrey;
-
+    background-image: url("../../assets/shared/desktop/bg-pattern-circle-header.svg");
+    background-repeat: no-repeat;
+    background-position: top right -3%;
+/*
     &:before {
         position: absolute;
         content: url("../../assets/shared/desktop/bg-pattern-circle.svg");        
-        top: -38vh;
-        right: 0vw;
+        top: -24vh;
+        right: 6vw;
         z-index: 1;
+        transform: rotate(90deg);
 
     } 
-
+*/
 
 }
 

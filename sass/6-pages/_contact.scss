@@ -1,0 +1,73 @@
+.contact {
+    margin-top: 6rem;
+    position: relative;
+
+    &Content {
+        width: 100%;
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &Form {
+        width: 40%;
+        margin-right: 12em;
+
+        &Group {
+            margin-bottom: 2.4rem;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            & input {
+                height: 4.2rem;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgba(54, 83, 107, .25);
+                background-color: $colorGrey;
+
+                &::placeholder {
+                    font-family: Public Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: -0.115385px;
+                    color: #36536B;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+
+                }
+
+            &:focus {
+                outline: none;
+            }    
+
+            &:not(:placeholder-shown):invalid {
+                border-bottom: 1px solid $colorErrorRed;
+                opacity: .5;
+                color: $colorErrorRed;
+            }
+             
+
+            }
+
+            & input:focus + &Error {
+                color: blue;
+            }
+
+
+        }
+
+        &Error {
+
+        }
+
+    }
+
+
+}
