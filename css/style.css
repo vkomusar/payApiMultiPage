@@ -652,10 +652,8 @@ p, ul li a {
     display: flex;
     flex-direction: row; }
   .contactForm {
-    width: 40%;
-    margin-right: 12em; }
+    width: 48%; }
     .contactFormGroup {
-      margin-bottom: 2.4rem;
       display: flex;
       width: 100%;
       flex-direction: column; }
@@ -666,7 +664,14 @@ p, ul li a {
         width: 100%;
         border: none;
         border-bottom: 1px solid rgba(54, 83, 107, 0.25);
-        background-color: #EDF3F8; }
+        background-color: #EDF3F8;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: #36536B; }
         .contactFormGroup input::placeholder {
           font-family: Public Sans;
           font-style: normal;
@@ -685,3 +690,21 @@ p, ul li a {
           color: #FF0000; }
       .contactFormGroup input:focus + .contactFormGroupError {
         color: blue; }
+    .contactFormCheckbox {
+      width: 24px;
+      height: 24px;
+      background: #36536B;
+      mix-blend-mode: normal;
+      opacity: 0.25; }
+    .contactFormError {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: -0.0846154px;
+      color: #FF0000;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      margin-top: 1rem;
+      visibility: hidden; }

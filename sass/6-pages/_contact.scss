@@ -10,11 +10,11 @@
     }
 
     &Form {
-        width: 40%;
-        margin-right: 12em;
+        width: 48%;
+        //margin-right: 12em;
 
         &Group {
-            margin-bottom: 2.4rem;
+            //margin-bottom: 2.4rem;
             display: flex;
             width: 100%;
             flex-direction: column;
@@ -29,6 +29,15 @@
                 border: none;
                 border-bottom: 1px solid rgba(54, 83, 107, .25);
                 background-color: $colorGrey;
+
+                font-family: 'Public Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: -0.115385px;
+                color: $sanJuanBlue;
+
 
                 &::placeholder {
                     font-family: Public Sans;
@@ -57,14 +66,30 @@
             }
 
             & input:focus + &Error {
-                color: blue;
+                color: blue; //Check this
             }
-
-
         }
 
-        &Error {
+        &Checkbox {
+            width: 24px;
+            height: 24px;
+            background: #36536B;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+        }// ovo nece raditi treba napravit nešto sa ::after ili before
 
+        &Error {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: -0.0846154px;
+            color: $colorErrorRed;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            margin-top: 1rem;
+            visibility: hidden;
         }
 
     }
