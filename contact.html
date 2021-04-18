@@ -26,7 +26,7 @@
 				</div>      
 			</div>
             <div class="contact">
-                <div class="uContentWrapper uContentWrapper--Narrow">
+                <div class="uContentWrapper uContentWrapper">
                     <div class="aboutHeadlineWrapper">
                         <h2 class="h2Large h2LargeSanJuanBlue h2Large--About">Submit a help request and we’ll get in touch shortly.</h2>
                     </div>
@@ -48,17 +48,24 @@
                                 <input type="text" placeholder="Title" id="title" required autocomplete="off">
                                 <small class="contactFormError ">This field can't be empty</small>     
                             </div>
-                            <div class="contactFormGroup">
-                                <input type="checkbox" id="Checkbox" required class="contactFormCheckbox">
-                                <label for="checkbox">Stay up-to-date with company announcements and updates to our API</label>    
+                            <div class="contactFormGroup contactFormGroup--Minimal">
+                                <div class="contactFormCheckboxWrapper">
+                                    <label for="checkbox" class="contactFormCheckboxLabel">
+                                        <input type="checkbox" id="checkbox" required class="contactFormCheckboxInput">
+                                        <span class="contactFormCheckboxButton"></span>
+                                    </label>
+                                    <span class="contactFormCheckboxText">Stay up-to-date with company announcements and updates to our API</span>  
+                                </div>
+  
+
                             </div>
                             <div class="contactFormGroup">
-                                <a href="#" class="btn">Submit</a>
+                                <button class="smallButton smallButtonBasic smallButtonBasic--Contact"><span>Submit</span></button>
                             </div>
                         </div>
                         <div class="contactInvestors">
                             <p>Join the thousands of innovators already building with us</p>
-                            <div class="aboutHalvesImage">
+                            <div>
                                 <div class="aboutLogos"> <!-- TODO check Multiple logos component -->
                                     <img src="assets/shared/desktop/tesla.svg" />
                                     <img src="assets/shared/desktop/microsoft.svg" />							

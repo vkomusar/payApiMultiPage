@@ -57,22 +57,31 @@
     margin-top: 32px;
     transition: all .5s ease-in-out;
 
+
     &:hover {
         background-color: $waterWhite;
         color: $mirageBlue;
     }
 
-    &Pricing {
+    &Basic {
         background-color: transparent;
         border: 1px solid $sanJuanBlue;
         color: $sanJuanBlue;
 
+        &--Contact{
+            padding: 16px 50px;
+            align-self: flex-start;
+        }
+        
+        
         &:hover {
             background-color: $sanJuanBlue;
             color: $waterWhite;
-        };
-
+        }
 
     }
+
+
+
 
 }

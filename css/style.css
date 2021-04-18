@@ -92,11 +92,14 @@ body {
   .smallButton:hover {
     background-color: #fbfcfe;
     color: #1b262f; }
-  .smallButtonPricing {
+  .smallButtonBasic {
     background-color: transparent;
     border: 1px solid #36536B;
     color: #36536B; }
-    .smallButtonPricing:hover {
+    .smallButtonBasic--Contact {
+      padding: 16px 50px;
+      align-self: flex-start; }
+    .smallButtonBasic:hover {
       background-color: #36536B;
       color: #fbfcfe; }
 
@@ -652,13 +655,15 @@ p, ul li a {
     display: flex;
     flex-direction: row; }
   .contactForm {
-    width: 48%; }
+    width: 39%; }
     .contactFormGroup {
       display: flex;
       width: 100%;
       flex-direction: column; }
       .contactFormGroup:last-child {
         margin-bottom: 0; }
+      .contactFormGroup--Minimal {
+        min-height: 24px; }
       .contactFormGroup input {
         height: 4.2rem;
         width: 100%;
@@ -690,12 +695,36 @@ p, ul li a {
           color: #FF0000; }
       .contactFormGroup input:focus + .contactFormGroupError {
         color: blue; }
-    .contactFormCheckbox {
-      width: 24px;
+    .contactFormCheckboxWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .contactFormCheckboxLabel {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      min-width: 24px;
+      min-height: 24px;
+      margin-right: 26px; }
+    .contactFormCheckboxInput {
+      position: absolute;
+      display: none; }
+    .contactFormCheckboxButton {
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 24px;
-      background: #36536B;
-      mix-blend-mode: normal;
-      opacity: 0.25; }
+      width: 24px;
+      background-color: #36536B;
+      opacity: .25; }
+    .contactFormCheckboxText {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.115385px;
+      color: #36536B; }
     .contactFormError {
       font-family: 'Public Sans';
       font-style: normal;
@@ -708,3 +737,13 @@ p, ul li a {
       opacity: 0.5;
       margin-top: 1rem;
       visibility: hidden; }
+
+.contactFormCheckboxLabel input:checked ~ .contactFormCheckboxButton {
+  background-color: #ba4270;
+  opacity: 1; }
+  .contactFormCheckboxLabel input:checked ~ .contactFormCheckboxButton:after {
+    content: url("../../assets/shared/desktop/checkmark.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
