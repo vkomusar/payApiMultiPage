@@ -24,10 +24,13 @@
         box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
         color: $colorWhite;
         transition: all .5s ease-in-out;
+        position: relative;
 
         &:hover {
             background-color: $charmPink;
         }
+
+
     }
 
     &Secondary {
