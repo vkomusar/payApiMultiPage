@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
 
     &Form {
@@ -33,7 +34,7 @@
                 width: 100%;
                 border: none;
                 border-bottom: 1px solid rgba(54, 83, 107, .25);
-                background-color: $colorGrey;
+                background-color: $colorGrey;                
 
                 font-family: 'Public Sans';
                 font-style: normal;
@@ -62,15 +63,24 @@
                     outline: none;
                 }    
 
-                &:not(:placeholder-shown):invalid {
+                &:invalid:focus:not(:placeholder-shown), &:focus:invalid:empty {
                     border-bottom: 1px solid $colorErrorRed;
                     opacity: .5;
                     color: $colorErrorRed;
-                } 
+
+                    & ~ .contactFormError {
+                        opacity: 1;
+                        
+                      }
+
+                }              
+
 
             }
 
-            & input:focus + &Error {
+
+
+            & input:focus &Error {
                 color: blue; //Check this
             }
 
@@ -143,7 +153,8 @@
             mix-blend-mode: normal;
             opacity: 0.5;
             margin-top: 1rem;
-            visibility: hidden;
+            opacity: 0;            
+            
         }
 
     }

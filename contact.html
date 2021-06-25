@@ -14,7 +14,7 @@
 				<div class="uContentWrapper">
 					<div class="mainNavigationWrapper">					
 						<div class="mainNavigationContent">
-							<img src="assets/shared/desktop/logo.svg" />
+							<a href="index.html"><img src="assets/shared/desktop/logo.svg" /></a>
 							<ul>
 								<li><a href="pricing.html">Pricing</a></li>
 								<li><a href="about.html">About</a></li>
@@ -33,7 +33,7 @@
                     <div class="contactContent">
                         <form class="contactForm" autocomplete="off">
                             <div class="contactFormGroup">
-                                <input type="text" placeholder="Name" id="name" required autocomplete="off">
+                                <input type="text" placeholder="Name" id="name" required autocomplete="off" pattern="[A-Za-z]{1,20}">
                                 <small class="contactFormError ">This field can't be empty</small>    
                             </div>
                             <div class="contactFormGroup">
@@ -94,12 +94,11 @@
                         <div class="startText">
                             <h1>Ready to start?</h1>
                         </div>
-                        <div class="startCTA">
-                            <div class="uEmail">
-                                <input type="email" placeholder="Enter email address" class="uEmailTextField" />
-                                <a class="button buttonPrimary" href="#">Schedule a Demo</a>							
-                            </div>
+                        <div class="uEmail uEmailFooter">
+                            <input type="email" placeholder="Enter email address" class="uEmailTextField" />
+                            <a class="button buttonPrimary" href="#">Schedule a Demo</a>							
                         </div>
+                        
                     </div>
         
                 </div>

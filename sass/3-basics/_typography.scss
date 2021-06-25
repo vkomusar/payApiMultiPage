@@ -7,8 +7,8 @@ p, ul li a {
 }
 
 .h1Large {
-    font-family: 'DM Serif Display', serif;
-    font-size:7.2rem;
+    font-family: "DM Serif Display",serif;
+    font-size: 7.2rem; // TODO CHECK THIS
     line-height: 7.2rem;
     font-style: normal;
     font-weight: normal;
@@ -53,6 +53,27 @@ p, ul li a {
     &--About {
         max-width: 70rem;
     }
+}
+
+
+.headingTertiary {
+
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;            
+    letter-spacing: -0.246154px;            
+    margin-bottom: 3rem;
+
+    &--DarkPink {
+        color: $darkPink;
+    }
+
+    &--SanJuanBlue {
+        color: $sanJuanBlue;
+    }
+
 }
 
 

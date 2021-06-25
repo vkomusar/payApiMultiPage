@@ -1,7 +1,6 @@
 .uContentWrapper {
-    max-width: 1540px;
-    width: 80%;
-    margin: 0 auto;
+    padding: 0 9vw;
+    //margin: 0 auto;
     display: flex;
     flex-direction: column;
   
@@ -13,7 +12,8 @@
     }
 
     &--Narrow {
-        width: 64%;
+        width: 90%;
+        margin: 0 auto;
     }
 
   }
@@ -26,17 +26,21 @@
     
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     border-radius: 24px;
-    border: none;
-    width: 445px;
+    border: none;    
     position: relative;
     display: flex;
     justify-content: space-between;
     background-color: $waterWhite;
 
-    &HeaderMargin {
+    &Header {
         /* - Margins that are used only in header - */
         margin-top: 4.2rem;
         margin-bottom: 1.6rem;
+        width: 70%;
+    }
+
+    &Footer {
+        width: 40%;
     }
 
     &TextField {
@@ -92,7 +96,7 @@
     }
 
     &--Large {
-        margin-bottom: 10rem;
+        margin-bottom: 6rem; //TODO provjeriti gdje se sve koristi
     }
 
     &--Huge {

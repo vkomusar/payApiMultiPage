@@ -1,25 +1,43 @@
 .homepageHeader {
     width: 100%;
     background-color: $colorGrey;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    
 
-    background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    z-index: 20;
+    &:before {
+
+        content: url("../../assets/home/desktop/homepage-header-grey-halfcircle-big-desktop.svg");        
+        position: absolute;
+        top: -152px;
+        right: -5vw;
+        z-index: 0;
+
+        @include respond(phone) {
+            top: -38%;
+            right: -25%;
+        }
+
+    }
 
     &Content{
 
         &Wrapper {
             display: flex;
-            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            position: relative;
-            padding: 15rem 0;
+            margin-top: -40px;
+
+            @include respond(phone){
+                flex-direction: column-reverse;
+            }
+
         }
 
         &Text {
-            width: 50%;
-            max-width: 570px; //TODO CHECK THIS
+            flex: 0 0 50%;
 
             & p {
                 font-family: Public Sans;
@@ -45,9 +63,7 @@
             justify-content: flex-end;
 
             & img {
-                position: absolute;
-                top: 0;
-                right: 0;
+
             }
         }
 

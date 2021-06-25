@@ -2,25 +2,12 @@
     width: 100%;    
     background-color: $colorGrey;
 
-    /*
-    background-image: url("../../assets/shared/desktop/bg-pattern-circle-header.svg");
-    background-repeat: no-repeat;
-    background-position: top right -3%;
-
-    */
-
-
-
-
     &::before {
         position: absolute;
         content: url("../../assets/shared/desktop/bg-pattern-circle-header.svg");        
         top: 0;
-        right: 0;
-
-    } 
-
-
+        right: 0; // TODO check this
+    }
 }
 
 .pricing {
@@ -52,17 +39,6 @@
         width: 33%;
         max-width: 35rem;
 
-        & h2 {
-            font-family: 'DM Serif Display';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 32px;
-            line-height: 40px;            
-            letter-spacing: -0.246154px;            
-            color: #BA4270; 
-            margin-bottom: 3rem;
-        }
-
         & p{
             font-family: 'Public Sans';
             font-style: normal;
@@ -70,13 +46,11 @@
             font-size: 15px;
             line-height: 28px;
             margin-bottom: 2rem;
-
-
             color: #6C8294;
         }
 
         & span {
-            font-family: DM Serif Display;
+            font-family: 'DM Serif Display';
             font-style: normal;
             font-weight: normal;
             font-size: 56px;
